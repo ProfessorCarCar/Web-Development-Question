@@ -1,0 +1,112 @@
+:root{
+    --color-one-main:#568EA3;
+    --color-one-sub: #D7E5EA;
+    --color-two-main:#c91319;
+    --color-two-sub: #f1c4c5;
+    --dark:             #333333;
+    --grey:             #cccccc;
+    --white:            #eeeeee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+body div{   
+    position: relative; 
+    width: 100vw;
+    height: 50vh;
+}
+
+#one {
+    top: 0;
+    background: var(--color-one-sub);
+    transform: rotate(180deg);
+}
+
+#two {
+    bottom: 0;
+    background: var(--color-two-sub);
+}
+
+.optionList{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.optionList div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+
+.optionList svg{
+    max-height: 50%;
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 20%;
+    background-color: var(--white);
+    
+}
+
+#one .optionList svg{
+    fill: var(--color-one-main);
+    border: 10px solid var(--color-one-main);
+    outline: 10px solid var(--color-one-sub);
+}
+
+#two .optionList svg{
+    fill: var(--color-two-main);
+    border: 10px solid var(--color-two-main);
+    outline: 10px solid var(--color-two-sub);
+}
+
+.arm{
+    position: absolute;
+    width: 10vw;
+    max-width: 100px;
+    height: 30%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fist{
+    position: absolute;
+    width: 10vw;
+    max-width: 100px;
+    height: 20vh;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-52%);
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.rock, .paper, .scissors{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.fist svg{
+    width: 350%;
+    position: absolute;
+    bottom: 0;
+}
+
